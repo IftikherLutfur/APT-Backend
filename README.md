@@ -122,8 +122,8 @@ No one has permission to use, copy, modify, or distribute this code without the 
 ---
 
 ## 🧑‍💻 Developer
+<a href="https://my-portfolio-1a1bc.web.app/">**Iftikher Lutfur Abdullah**</a>
 
-<a herf="https://my-portfolio-1a1bc.web.app/">**Iftikher Lutfur Abdullah**</a>
-Junior Full Stack Developer 
+Junior Full Stack Developer
 
 ---
