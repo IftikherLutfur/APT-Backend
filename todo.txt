@@ -1,0 +1,7 @@
+1. Implement user create  ---> Done
+2. User get, user delete etc  ---> Done
+3. User login implement when user logged in at the same time have to set a cookies on the by using the cookie parser.  ---> pending
+7. Added JWT token for user authentication  ---> pending
+4. User logout implement  ---> pending
+5. User update implement  ---> pending
+6. Added some private route like porfolio edit  ---> pending
