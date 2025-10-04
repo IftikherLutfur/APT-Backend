@@ -1,8 +1,10 @@
 import jwt, { JwtPayload, SignOptions } from "jsonwebtoken"
+import { Role } from "../interface/interface";
 
 export interface MyJwtPayload extends JwtPayload {
     userId: string;
     email?: string;
+    role:Role;
 }
 export const genertateToken = (
     payload: MyJwtPayload,

@@ -22,6 +22,24 @@ const login = async (req: Request, res: Response) => {
     }
 }
 
+const logout = async(req:Request, res:Response) =>{
+    try {
+       res.clearCookie("accessToken",{
+        httpOnly:true,
+        secure:false,
+        sameSite:"lax"
+       })
+        res.send({
+            success:true,
+            message:"User loged out",
+            status: 200
+        })
+    } catch (error) {
+     console.log(error)   
+    }
+}
+
 export const authController = {
-    login
+    login,
+    logout
 }
