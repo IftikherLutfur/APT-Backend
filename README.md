@@ -48,9 +48,13 @@ touch .env
 ### `.env` file example
 
 ```env
-PORT=5000
-MONGO_URI=your_mongodb_connection_string
-ACCESS_TOKEN=your_jwt_secret
+PORT=3000/5000
+DB_USER=******
+DB_PASS=*******
+DB_CONNECT=***************
+BCRYPT_SALT_ROUND= Number like 10,20
+ACCESS_TOKEN=*******************
+TOKEN_EXPIRE=***
 ```
 
 ---
@@ -112,6 +116,7 @@ This backend is fully functional with CRUD operations, authentication, and role-
 
 ## 📜 License
 
-This project is licensed under the **MIT License**.
+This project is **not licensed**. All rights reserved.  
+No one has permission to use, copy, modify, or distribute this code without the author's consent.
 
 ---
