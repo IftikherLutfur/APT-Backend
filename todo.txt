@@ -5,4 +5,4 @@
 4. User logout implement  ---> Done
 6. Added some private route like portfolio edit  ---> Done 
 5. User update implement  ---> pending
-6.Blog post create(Role.admin), get, delet(Role.Admin), find by id , update(Role.Admin) ---> pending
+6.Blog post create(Role.admin), get, delete(Role.Admin), find by id , update(Role.Admin) ---> Done

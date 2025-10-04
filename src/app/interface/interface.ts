@@ -6,6 +6,12 @@ export interface IProject {
     technology?: string[];
     image?: string;
 }
+export interface UpdateProject {
+    title?:string;
+    description?:string;
+    technology?: string[];
+    image?: string;
+}
 
 export enum Role {
     ADMIN="ADMIN",

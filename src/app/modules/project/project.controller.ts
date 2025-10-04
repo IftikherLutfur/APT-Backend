@@ -40,6 +40,22 @@ const getSingleProject = async (req: Request, res: Response) => {
     }
 }
 
+const updateProject = async(req:Request, res:Response) =>{
+    try {
+        const id = req.params.id;
+        const body = req.body;
+        const project = await projectService.updateProject(id, body)
+        res.send({
+            success:true,
+            message:"Project updated successgully",
+            status:200,
+            data:project
+        })
+    } catch (error) {
+        console.log(error)
+    }
+}
+
 const deleteProject = async (req: Request, res: Response) => {
     try {
         const id = req.params.id
@@ -59,5 +75,6 @@ export const projectController = {
     getProject,
     postProject,
     getSingleProject,
+    updateProject,
     deleteProject
 }

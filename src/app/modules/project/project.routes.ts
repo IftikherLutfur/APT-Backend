@@ -8,6 +8,7 @@ const router = Router()
 router.get("/", projectController.getProject)
 router.post("/", checkPermit(Role.ADMIN), projectController.postProject)
 router.get("/:id", projectController.getSingleProject)
-router.delete("/:id", projectController.deleteProject)
+router.patch("/:id",checkPermit(Role.ADMIN), projectController.updateProject)
+router.delete("/:id", checkPermit(Role.ADMIN),projectController.deleteProject)
 
 export const projectRouter = router;
