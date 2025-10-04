@@ -10,7 +10,7 @@ const getProject = async (req: Request, res: Response) => {
         data: project,
     })
 }
-import { IProject } from "./project.interface";
+import { IProject } from "../../interface/interface";
 
 const postProject = async (req: Request, res: Response) => {
     try {

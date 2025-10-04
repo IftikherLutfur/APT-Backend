@@ -1,5 +1,5 @@
-import { IProject } from "./project.interface"
-import { Project, } from "./project.model"
+import { IProject } from "../../interface/interface"
+import { Project, } from "../../model/model"
 
 const getProject = async () => {
     const project = await Project.find()
