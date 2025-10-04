@@ -1,5 +1,5 @@
 import mongoose, { model, Schema } from "mongoose";
-import { IProject, IUser } from "../interface/interface";
+import { IProject, IUser, Role } from "../interface/interface";
 
 export const projectSchema = new Schema<IProject>({
     title: { type: String, required: true },
@@ -15,10 +15,19 @@ export const projectSchema = new Schema<IProject>({
 
 export const userSchema = new Schema<IUser>({
     name: { type: String, required: true },
-    email: { type: String, required: true, unique:true},
-    password: { type: String, required: true,
-        validate:{
-            validator: function(value){
+    email: { type: String, required: true, unique: true },
+    role: { 
+        type: String, 
+        enum: Object.values(Role), 
+        default: Role.USER ,
+        validate:{validator: function(value:Role){
+            return [Role.USER, Role.ADMIN].includes(value)
+        },message:"Role must be user or emails"}
+    },
+    password: {
+        type: String, required: true,
+        validate: {
+            validator: function (value) {
                 return typeof value === "string"
             },
             message: "Password must be string"
