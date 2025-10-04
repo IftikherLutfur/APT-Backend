@@ -33,10 +33,10 @@ A backend project for managing portfolio content such as **projects, blogs, and 
 
 ```bash
 # Clone this repository
-git clone https://github.com/your-username/portfolio-backend.git
+git clone https://github.com/IftikherLutfur/APT-Backend.git
 
 # Go into the project folder
-cd portfolio-backend
+cd APT-Backend
 
 # Install dependencies
 npm install
