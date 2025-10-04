@@ -120,3 +120,10 @@ This project is **not licensed**. All rights reserved.
 No one has permission to use, copy, modify, or distribute this code without the author's consent.
 
 ---
+
+## 🧑‍💻 Developer
+
+**Iftikher Lutfur Abdullah**  
+Junior Full Stack Developer 
+
+---
