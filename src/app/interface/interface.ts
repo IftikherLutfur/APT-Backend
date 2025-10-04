@@ -1,10 +1,10 @@
 import { Types } from "mongoose";
 
 export interface IProject {
-    title:string,
-    description?:string,
-    technology?: string[],
-    image?: string,
+    title:string;
+    description?:string;
+    technology?: string[];
+    image?: string;
 }
 
 export enum Role {
@@ -19,4 +19,19 @@ export interface IUser {
     email?:string;
     password?: string;
     phone?: number;
+}
+
+export interface IBlog {
+    _id:Types.ObjectId
+    title:string,
+    description:string,
+    author: string;
+    tags:string[];
+}
+
+export interface UpdateBlog {
+    title?:string,
+    description?:string,
+    author?: string;
+    tags?:string[];
 }

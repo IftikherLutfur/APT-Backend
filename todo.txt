@@ -1,7 +1,8 @@
 1. Implement user create  ---> Done
 2. User get, user delete etc  ---> Done
-3. User login implement when user logged in at the same time have to set a cookies on the by using the cookie parser.  ---> pending
-7. Added JWT token for user authentication  ---> pending
-4. User logout implement  ---> pending
+3. User login implement when user logged in at the same time have to set a cookies on the by using the cookie parser.  ---> Done(but not yet check)
+7. Added JWT token for user authentication  ---> Done
+4. User logout implement  ---> Done
+6. Added some private route like portfolio edit  ---> Done 
 5. User update implement  ---> pending
-6. Added some private route like porfolio edit  ---> pending
+6.Blog post create(Role.admin), get, delet(Role.Admin), find by id , update(Role.Admin) ---> pending

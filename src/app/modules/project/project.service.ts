@@ -7,7 +7,11 @@ const getProject = async () => {
 }
 const postProject = async (payload: IProject) => {
     const post = await Project.create({
-        title: payload.title
+        title: payload.title,
+        description:payload.description,
+        image: payload.image,
+        technology:payload.technology,
+
     })
     return post
 }
