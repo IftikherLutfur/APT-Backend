@@ -123,7 +123,7 @@ No one has permission to use, copy, modify, or distribute this code without the 
 
 ## 🧑‍💻 Developer
 
-**Iftikher Lutfur Abdullah**  
+<a herf="https://my-portfolio-1a1bc.web.app/">**Iftikher Lutfur Abdullah**</a>
 Junior Full Stack Developer 
 
 ---
