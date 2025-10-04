@@ -1,3 +1,5 @@
+import { Types } from "mongoose";
+
 export interface IProject {
     title:string,
     description?:string,
@@ -6,8 +8,9 @@ export interface IProject {
 }
 
 export interface IUser {
-    name: string;
-    email:string;
-    password: string;
+    _id?: Types.ObjectId
+    name?: string;
+    email?:string;
+    password?: string;
     phone?: number;
 }
