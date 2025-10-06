@@ -25,7 +25,13 @@ const getALlUser = async () =>{
     const getAll = await User.find();
     return getAll;
 }
+
+const deleteUser = async(id:string) =>{
+    const deleteUser = await User.deleteOne({_id:id})
+    return deleteUser
+}
 export const userService = {
     createUser,
-    getALlUser
+    getALlUser,
+    deleteUser
 }
