@@ -33,6 +33,7 @@ export interface IBlog {
     description:string,
     author: string;
     tags:string[];
+    image: string;
 }
 
 export interface UpdateBlog {
