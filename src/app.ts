@@ -4,9 +4,14 @@ import { userRoute } from "./app/modules/User/user.route";
 import cookieParser from "cookie-parser";
 import { authRouter } from "./app/modules/authentication/auth.route";
 import { blogRouter } from "./app/modules/blogs/blog.route";
+import cors from "cors"
 
 
 const app = express();
+app.use(cors({
+  origin: ["http://localhost:3000"], // change this to your frontend URL
+  credentials: true, // allows sending cookies (important for auth)
+}));
 app.use(express.json())
 app.use(cookieParser())
 app.use("/project", projectRouter)
