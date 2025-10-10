@@ -5,7 +5,7 @@ export const projectSchema = new Schema<IProject>({
     title: { type: String, required: true },
     description: { type: String },
     image: { type: String },
-    technology: { type: [String], required:false }
+    technology: { type: [String], required: false }
 },
     {
         versionKey: false,
@@ -47,7 +47,8 @@ export const blogSchema = new Schema<IBlog>({
     title: { type: String, required: true },
     description: { type: String, required: true },
     author: { type: String, required: false },
-    tags: { type: [String], required: false, default: [] }
+    tags: { type: [String], required: false, default: [] },
+    image: { type: String, require: true }
 },
     {
         versionKey: false,

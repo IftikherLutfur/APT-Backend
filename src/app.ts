@@ -4,9 +4,14 @@ import { userRoute } from "./app/modules/User/user.route";
 import cookieParser from "cookie-parser";
 import { authRouter } from "./app/modules/authentication/auth.route";
 import { blogRouter } from "./app/modules/blogs/blog.route";
+import cors from "cors"
 
 
 const app = express();
+app.use(cors({
+  origin: ["https://abdullah-portfolio-mu-dusky.vercel.app"],
+  credentials: true, 
+}));
 app.use(express.json())
 app.use(cookieParser())
 app.use("/project", projectRouter)

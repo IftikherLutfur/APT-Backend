@@ -26,7 +26,8 @@ const updateBlog = async (payload: IBlog, id: string) => {
         title: payload.title,
         description: payload.description,
         tags: payload.tags,
-        author: payload.author
+        author: payload.author,
+        image: payload.image
     }
     const updateBlog = await Blog.findByIdAndUpdate(id, updateData, { new: true })
     return updateBlog

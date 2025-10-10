@@ -39,7 +39,19 @@ const getALl = async (req: Request, res: Response) => {
     }
 }
 
+const deleteUser = async (req:Request, res:Response) =>{
+    const id = req.params.id;
+    const deleteUser = await userService.deleteUser(id)
+    res.send({
+        success:true,
+        message:"This user has been deleted",
+        status:200,
+        data:null
+    })
+}
+
 export const userController = {
     userCreate,
-    getALl
+    getALl,
+    deleteUser
 }
