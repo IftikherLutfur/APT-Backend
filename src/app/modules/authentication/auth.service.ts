@@ -16,11 +16,12 @@ const login = async (payload: IUser) => {
     }
     const plainUser = isUserExist.toObject() as IUser;
     const userToken = createUserToken(plainUser)
-    const { name, email: userEmail, phone, role } = isUserExist
+    const { name, email: userEmail, phone, role, _id } = isUserExist
 
     return {
         accessToken: userToken,
         user:{
+            id:_id,
             name,
             email: userEmail,
             phone,

@@ -6,9 +6,9 @@ import { Role } from "../../interface/interface";
 const router = Router()
 
 router.get("/", projectController.getProject)
-router.post("/", checkPermit(Role.ADMIN), projectController.postProject)
+router.post("/", projectController.postProject)
 router.get("/:id", projectController.getSingleProject)
-router.patch("/:id",checkPermit(Role.ADMIN), projectController.updateProject)
-router.delete("/:id", checkPermit(Role.ADMIN),projectController.deleteProject)
+router.patch("/:id", projectController.updateProject)
+router.delete("/:id",projectController.deleteProject)
 
 export const projectRouter = router;

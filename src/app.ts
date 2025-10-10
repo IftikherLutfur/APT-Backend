@@ -9,8 +9,8 @@ import cors from "cors"
 
 const app = express();
 app.use(cors({
-  origin: ["http://localhost:3000"], // change this to your frontend URL
-  credentials: true, // allows sending cookies (important for auth)
+  origin: ["https://abdullah-portfolio-mu-dusky.vercel.app"],
+  credentials: true, 
 }));
 app.use(express.json())
 app.use(cookieParser())

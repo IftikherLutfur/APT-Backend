@@ -27,7 +27,7 @@ const logout = async(req:Request, res:Response) =>{
        res.clearCookie("accessToken",{
         httpOnly:true,
         secure:false,
-        sameSite:"lax"
+        sameSite:"none"
        })
         res.send({
             success:true,

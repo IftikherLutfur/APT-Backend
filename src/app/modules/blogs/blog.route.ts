@@ -5,10 +5,10 @@ import { blogController } from "./blog.controller";
 
 const blog = Router()
 
-blog.post("/", checkPermit(Role.ADMIN), blogController.blogPost)
+blog.post("/", blogController.blogPost)
 blog.get("/", blogController.getBlog)
 blog.get("/:id", blogController.blogById)
-blog.patch("/:id",checkPermit(Role.ADMIN), blogController.updateBlog)
-blog.delete("/:id",checkPermit(Role.ADMIN), blogController.deleteBlog)
+blog.patch("/:id", blogController.updateBlog)
+blog.delete("/:id", blogController.deleteBlog)
 
 export const blogRouter = blog;
