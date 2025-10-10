@@ -9,7 +9,7 @@ import cors from "cors"
 
 const app = express();
 app.use(cors({
-  origin: ["https://abdullah-portfolio-mu-dusky.vercel.app"],
+  origin: ["https://portfolio-of-abdullah-iota.vercel.app"],
   credentials: true, 
 }));
 app.use(express.json())
