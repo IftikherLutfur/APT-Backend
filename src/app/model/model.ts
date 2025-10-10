@@ -4,7 +4,7 @@ import { IBlog, IProject, IUser, Role, UpdateBlog } from "../interface/interface
 export const projectSchema = new Schema<IProject>({
     title: { type: String, required: true },
     description: { type: String },
-    image: { type: String },
+    image: { type: [String] },
     technology: { type: [String], required: false }
 },
     {

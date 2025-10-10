@@ -4,13 +4,13 @@ export interface IProject {
     title:string;
     description?:string;
     technology?: string[];
-    image?: string;
+    image?: string[];
 }
 export interface UpdateProject {
     title?:string;
     description?:string;
     technology?: string[];
-    image?: string;
+    image?: string[];
 }
 
 export enum Role {

@@ -6,7 +6,7 @@ const interface_1 = require("../interface/interface");
 exports.projectSchema = new mongoose_1.Schema({
     title: { type: String, required: true },
     description: { type: String },
-    image: { type: String },
+    image: { type: [String] },
     technology: { type: [String], required: false }
 }, {
     versionKey: false,
