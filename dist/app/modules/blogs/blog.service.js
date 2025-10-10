@@ -34,7 +34,8 @@ const updateBlog = (payload, id) => __awaiter(void 0, void 0, void 0, function* 
         title: payload.title,
         description: payload.description,
         tags: payload.tags,
-        author: payload.author
+        author: payload.author,
+        image: payload.image
     };
     const updateBlog = yield model_1.Blog.findByIdAndUpdate(id, updateData, { new: true });
     return updateBlog;

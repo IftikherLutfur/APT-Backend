@@ -34,7 +34,7 @@ const logout = (req, res) => __awaiter(void 0, void 0, void 0, function* () {
         res.clearCookie("accessToken", {
             httpOnly: true,
             secure: false,
-            sameSite: "lax"
+            sameSite: "none"
         });
         res.send({
             success: true,

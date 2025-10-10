@@ -39,10 +39,11 @@ const login = (payload) => __awaiter(void 0, void 0, void 0, function* () {
     }
     const plainUser = isUserExist.toObject();
     const userToken = (0, createUserToken_1.createUserToken)(plainUser);
-    const { name, email: userEmail, phone, role } = isUserExist;
+    const { name, email: userEmail, phone, role, _id } = isUserExist;
     return {
         accessToken: userToken,
         user: {
+            id: _id,
             name,
             email: userEmail,
             phone,

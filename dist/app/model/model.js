@@ -43,7 +43,8 @@ exports.blogSchema = new mongoose_1.Schema({
     title: { type: String, required: true },
     description: { type: String, required: true },
     author: { type: String, required: false },
-    tags: { type: [String], required: false, default: [] }
+    tags: { type: [String], required: false, default: [] },
+    image: { type: String, require: true }
 }, {
     versionKey: false,
     timestamps: true,

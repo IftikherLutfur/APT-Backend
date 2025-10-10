@@ -2,13 +2,11 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.blogRouter = void 0;
 const express_1 = require("express");
-const checkPermit_1 = require("../../middleware/checkPermit");
-const interface_1 = require("../../interface/interface");
 const blog_controller_1 = require("./blog.controller");
 const blog = (0, express_1.Router)();
-blog.post("/", (0, checkPermit_1.checkPermit)(interface_1.Role.ADMIN), blog_controller_1.blogController.blogPost);
+blog.post("/", blog_controller_1.blogController.blogPost);
 blog.get("/", blog_controller_1.blogController.getBlog);
 blog.get("/:id", blog_controller_1.blogController.blogById);
-blog.patch("/:id", (0, checkPermit_1.checkPermit)(interface_1.Role.ADMIN), blog_controller_1.blogController.updateBlog);
-blog.delete("/:id", (0, checkPermit_1.checkPermit)(interface_1.Role.ADMIN), blog_controller_1.blogController.deleteBlog);
+blog.patch("/:id", blog_controller_1.blogController.updateBlog);
+blog.delete("/:id", blog_controller_1.blogController.deleteBlog);
 exports.blogRouter = blog;
