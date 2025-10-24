@@ -5,7 +5,10 @@ export const projectSchema = new Schema<IProject>({
     title: { type: String, required: true },
     description: { type: String },
     image: { type: [String] },
-    technology: { type: [String], required: false }
+    technology: { type: [String], required: false },
+    liveLink : {typre:String},
+    frontendGithubLink : {typre:String},
+    backendGithubLink : {typre:String},
 },
     {
         versionKey: false,
