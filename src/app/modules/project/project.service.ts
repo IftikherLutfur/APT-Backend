@@ -2,7 +2,7 @@ import { IProject, UpdateBlog, UpdateProject } from "../../interface/interface"
 import { Project, } from "../../model/model"
 
 const getProject = async () => {
-    const project = await Project.find()
+    const project = await Project.find().sort({ createdAt: -1 })
     return project
 }
 const postProject = async (payload: IProject) => {

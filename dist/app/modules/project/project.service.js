@@ -12,7 +12,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.projectService = void 0;
 const model_1 = require("../../model/model");
 const getProject = () => __awaiter(void 0, void 0, void 0, function* () {
-    const project = yield model_1.Project.find();
+    const project = yield model_1.Project.find().sort({ createdAt: -1 });
     return project;
 });
 const postProject = (payload) => __awaiter(void 0, void 0, void 0, function* () {
